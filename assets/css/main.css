@@ -1863,6 +1863,7 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+
 		input[type="submit"].icon,
 		input[type="reset"].icon,
 		input[type="button"].icon,
@@ -1968,7 +1969,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #8cc9f0;
-			color: #ffffff !important;
+			color: #000 !important;
 			box-shadow: none;
 		}
 
