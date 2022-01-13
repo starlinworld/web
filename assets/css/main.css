@@ -55,9 +55,11 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+/* 修改了个高亮 */
 mark {
-	background-color: transparent;
-	color: inherit;
+	background-color: #fae901a2;
+	color: #be33ac;
+	font-size: 1.2rem;
 }
 
 input::-moz-focus-inner {
@@ -1972,6 +1974,9 @@ input, select, textarea {
 			color: #000 !important;
 			box-shadow: none;
 		}
+			.button.primary.left{
+				float: left;
+			}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
@@ -3141,7 +3146,8 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					max-width: 8rem;
+					border-radius:50%;
 				}
 
 		@media screen and (max-width: 1280px) {
