@@ -8,7 +8,6 @@
 	2022.1.10
 	HailayLin(hailay@starlin.world)
 	hailay.site
-	@Latest Change : version 1.1 2022.1.13 基本完工
 
 	# PS：
 	* 要是大佬都看到这了…… 要不提点网页上的小建议？
@@ -20,7 +19,7 @@
 <html>
 
 <head>
-	<title>星林宇宙MC服务器</title>
+	<title>星林宇宙 MC服务器</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -47,8 +46,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#active" class="active">建筑比赛活动</a></li>
-				<li><a href="#intro" >服务器特点</a></li>
+				<li><a href="contest-2022-01.html">建筑比赛活动</a></li>
+				<li><a href="#intro" class="active">服务器特点</a></li>
 				<li><a href="#pictures">服务器实景</a></li>
 				<li><a href="#more">服务器氛围</a></li>
 				<li><a href="#maps">服务器地图说明</a></li>
@@ -59,13 +58,6 @@
 
 		<!-- active -->
 		<div id="main">
-
-			<section id="active" class="main special">
-				<header class="major">
-					<h2>服务器建筑比赛</h2>
-				</header>
-				<span class="image main"><img src="images/building_compertition.jpg" alt="" /></span>
-			</section>
 
 			<!-- Introduction -->
 			<section id="intro" class="main special">
@@ -156,7 +148,7 @@
 							<!-- 加一个重要的css……bootstrap有,但用的时候发现这个主题自己定义了一个  -->
 							<!-- TODOPS：css选择器不太懂 -->
 						</header>
-						<p>网页地图包含了5个world，一个地狱和一个下届</p>
+						<p>网页地图包含了5个world，一个下界和一个末地</p>
 					</div>
 				</div>
 				<span class = "image main"><img src="images/world_warps.png"></span>
@@ -178,7 +170,7 @@
 				</header>
 				<footer class="major">
 					<ul class="actions special">
-						<li><a target="_blank" href="https://jq.qq.com/?_wv=1027&k=1DsWS4Ls" class="button primary left">点击加群游戏群</a></li>
+						<li><a target="_blank" href="https://jq.qq.com/?_wv=1027&k=1DsWS4Ls" class="button primary left">点击加入游戏群</a></li>
 						<li><a target="_blank" href="https://jq.qq.com/?_wv=1027&k=EecCR3Zf" class="button">点击加入建设、管理、理论研究群</a></li>
 						<!-- <li><a href="generic.html" class="button">下载客户端</a></li> -->
 						<!-- BUG客户端可以自己配置……纯净服有必要再去定制一个客户端吗 -->
@@ -208,17 +200,24 @@
 					<dd><a target="_blank" href="mailto:hailay@starlin.world">hailay@starlin.world</a></dd>
 				</dl>
 				<ul class="icons">
-					<li><a target="_blank" href="https://space.bilibili.com/178184777" ><span class="label">Bilibili</span></a></li>
-					<li><a target="_blank" href="https://www.mcbbs.net/?1383503" ><span class="label">mcbbs</span></a></li>
+					<li><a target="_blank" href="https://space.bilibili.com/178184777"><span class="label">Bilibili</span></a></li>
+					<li><a target="_blank" href="https://www.mcbbs.net/?1383503"><span class="label">MCBBS</span></a></li>
 					<li><a target="_blank" href="https://github.com/hailaylin/" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 				</ul>
 			</section>
 			<p class="copyright">&copy; StarlinWorld. Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.<br>
 				Redesigned By <a target="_blank" href="http://hailay.site">Hailay</a> 2022.<br>
 				<a target="_blank" href="https://beian.miit.gov.cn/">粤ICP备 - 2021145979号(在备案了在备案了)</a><br>
-				&copy;星林宇宙 2017-2022.
+				&copy;星林宇宙 2017-<span id="nowDate">.
 			</p>
 		</footer>
+		<script type="text/javascript">
+			function nowTime() {
+			  var today=new Date();
+			  var yyyy = today.getFullYear();
+			  document.getElementById('nowDate').innerHTML=yyyy;
+			}
+		</script>
 
 	</div>
 
@@ -232,5 +231,9 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
+
+<script>
+	setInterval(nowTime, 1000);
+</script>
 
 </html>
